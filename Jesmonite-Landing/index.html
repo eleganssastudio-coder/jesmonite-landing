@@ -69,7 +69,6 @@ object-fit:cover;
 }
 
 
-
 .text-box span{
 font-family:"Playfair Display";
 font-size:50px;
@@ -77,75 +76,14 @@ color:#7A98AA;
 }
 
 
-
 @media(max-width:700px){
-
 .process-card{
 grid-template-columns:1fr;
 }
-
 .photo-box{
 height:250px;
 }
-
 }
-
-
-
-.process{
-display:flex;
-flex-direction:column;
-gap:35px;
-}
-
-
-.process-card{
-background:#F5F9FC;
-border-radius:25px;
-padding:25px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-align-items:center;
-}
-
-
-.photo-box{
-width:100%;
-height:350px;
-overflow:hidden;
-border-radius:20px;
-}
-
-
-.photo-box img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-
-
-.text-box span{
-font-family:"Playfair Display";
-font-size:50px;
-color:#7A98AA;
-}
-
-
-
-@media(max-width:700px){
-
-.process-card{
-grid-template-columns:1fr;
-}
-
-.photo-box{
-height:250px;
-}
-
-}
-
 
 
 .hero{
@@ -158,7 +96,6 @@ background-repeat:no-repeat;
 }
 
 
-
 .container{
 max-width:1100px;
 margin:auto;
@@ -166,11 +103,9 @@ padding:60px 25px;
 }
 
 
-
 h1,h2{
 font-family:"Playfair Display",serif;
 }
-
 
 h1{
 font-size:55px;
@@ -178,12 +113,10 @@ line-height:1.1;
 margin-bottom:10px;
 }
 
-
 h2{
 font-size:36px;
 margin-top:70px;
 }
-
 
 
 .italic{
@@ -192,11 +125,9 @@ font-style:italic;
 font-size:24px;
 }
 
-
 .intro{
 text-align:center;
 }
-
 
 .card{
 background:var(--card);
@@ -207,7 +138,6 @@ box-shadow:0 10px 30px #0001;
 }
 
 
-
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -215,32 +145,22 @@ gap:30px;
 align-items:start;
 }
 
-
 @media(max-width:900px){
-
 .grid{
 grid-template-columns:repeat(2,1fr);
 }
-
 }
 
-
 @media(max-width:600px){
-
 .hero{
 height:55vw;
 min-height:220px;
 max-height:420px;
 }
-
-
 .grid{
 grid-template-columns:1fr;
 }
-
 }
-
-
 
 
 .step span{
@@ -249,21 +169,15 @@ font-family:"Playfair Display";
 color:var(--silver);
 }
 
-
-
 ul{
 padding:0;
 list-style:none;
 }
 
-
-
 li{
 margin:18px 0;
 font-size:18px;
 }
-
-
 
 .btn{
 display:inline-block;
@@ -275,8 +189,6 @@ text-decoration:none;
 margin-top:20px;
 }
 
-
-
 .cta{
 background:var(--accent);
 color:white;
@@ -284,8 +196,6 @@ padding:50px;
 border-radius:25px;
 text-align:center;
 }
-
-
 
 footer{
 background:var(--dark);
@@ -295,10 +205,6 @@ text-align:center;
 font-size:14px;
 }
 
-
-
-/* Готови продукти */
-
 .product{
 width:100%;
 height:300px;
@@ -307,12 +213,10 @@ display:block;
 border-radius:18px;
 }
 
-
 .products-section .grid{
 grid-template-columns:repeat(3,1fr);
 gap:30px;
 }
-
 
 .products-section .card{
 padding:20px;
@@ -320,553 +224,283 @@ margin-top:0;
 overflow:hidden;
 }
 
-
 @media(max-width:900px){
-
 .products-section .grid{
 grid-template-columns:repeat(2,1fr);
 }
-
 }
 
-
 @media(max-width:600px){
-
 .hero{
 height:55vw;
 min-height:220px;
 max-height:420px;
 }
-
-
 .products-section .grid{
 grid-template-columns:1fr;
 }
-
 }
 
+/* ── Intro icons ── */
+.intro-icons {
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:25px;
+padding-top:22px;
+border-top:1px solid #D0DDE6;
+}
+
+.intro-icon-item {
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:8px;
+min-width:100px;
+}
+
+.intro-icon-item svg {
+width:36px;
+height:36px;
+stroke:#3A5068;
+fill:none;
+stroke-width:1.5;
+stroke-linecap:round;
+stroke-linejoin:round;
+}
+
+.intro-icon-item span {
+font-weight:700;
+font-size:13px;
+color:#243444;
+text-align:center;
+line-height:1.4;
+}
 
 </style>
 
-
 </head>
-
-
 
 <body>
 
-
-
 <div class="hero"></div>
-
-
 
 <section class="container intro">
 
+<div class="italic">Eleganssa Studio</div>
+<div class="italic">Твори. Миксирай. Създавай.</div>
 
-<div class="italic">
-Eleganssa Studio
-</div>
+<h1>РАБОТИЛНИЦА ПО<br>Jesmonite декор</h1>
 
-
-<div class="italic">
-Твори. Миксирай. Създавай.
-</div>
-
-
-
-<h1>
-РАБОТИЛНИЦА ПО<br>
-Jesmonite декор
-</h1>
-
-
-<div class="italic">
-Изкуство за дома, ръчно направено с любов!
-</div>
-
-
+<div class="italic">Изкуство за дома, ръчно направено с любов!</div>
 
 <div class="card" style="text-align:center;">
 
-<p style="font-size:18px; font-family:'Playfair Display', serif; color:#3A5068; margin-bottom:20px;">
-Jesmonite е материал, който мълчи —<br>докато не го сложиш в ръцете си.Тогава се подчинява изцяло на теб.
-</p>
+  <p style="font-size:18px; font-family:'Playfair Display', serif; color:#3A5068; margin-bottom:20px;">
+    Jesmonite е материал, който мълчи —<br>докато не го сложиш в ръцете си.
+  </p>
 
-<p style="font-size:16px; line-height:1.8; color:#243444; margin-bottom:20px;">
-Ще излееш, ще оформиш, ще шлайфаш.<br>
-Ще гледаш как от прах и вода се ражда предмет с тежест, характер и история. 
-</p>
+  <p style="font-size:16px; line-height:1.8; color:#243444; margin-bottom:20px;">
+    Ще излееш, ще оформиш, ще шлайфаш.<br>
+    От прах и вода се ражда предмет с тежест, характер и история.
+  </p>
 
-<div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:25px; padding-top:20px; border-top:1px solid #D0DDE6;">
+  <div class="intro-icons">
 
-<div style="text-align:center;">
-<div style="font-size:22px; margin-bottom:6px;">🌿</div>
-<div style="font-weight:700; font-size:14px;">Подходящо за начинаещи</div>
+    <!-- Подходящо за начинаещи — ръка с четка -->
+    <div class="intro-icon-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 20h9"/>
+        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+      </svg>
+      <span>Подходящо за<br>начинаещи</span>
+    </div>
+
+    <!-- Всички материали включени — кутия -->
+    <div class="intro-icon-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        <line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+      <span>Всички материали<br>включени</span>
+    </div>
+
+    <!-- Сам, с приятел или с дете — хора -->
+    <div class="intro-icon-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </svg>
+      <span>Сам, с приятел<br>или с дете</span>
+    </div>
+
+    <!-- Вино, кафе или чай — чаша -->
+    <div class="intro-icon-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+        <line x1="6" y1="1" x2="6" y2="4"/>
+        <line x1="10" y1="1" x2="10" y2="4"/>
+        <line x1="14" y1="1" x2="14" y2="4"/>
+      </svg>
+      <span>Вино, кафе<br>или чай + закуска</span>
+    </div>
+
+  </div>
+
 </div>
-
-<div style="text-align:center;">
-<div style="font-size:22px; margin-bottom:6px;">🎨</div>
-<div style="font-weight:700; font-size:14px;">Всички материали включени</div>
-</div>
-
-<div style="text-align:center;">
-<div style="font-size:22px; margin-bottom:6px;">👥</div>
-<div style="font-weight:700; font-size:14px;">Сам, с приятел или с дете</div>
-</div>
-
-<div style="text-align:center;">
-<div style="font-size:22px; margin-bottom:6px;">☕</div>
-<div style="font-weight:700; font-size:14px;">Вино, кафе или чай + закуска</div>
-</div>
-
-</div>
-
-</div>
-
 
 </section>
 
 
-
-
-
 <section class="container">
-
-<h2>
-ПРОЦЕСЪТ — СТЪПКА ПО СТЪПКА
-</h2>
-
-
+<h2>ПРОЦЕСЪТ — СТЪПКА ПО СТЪПКА</h2>
 <div class="process">
 
+<div class="process-card">
+<div class="photo-box"><img src="images/step1.jpg"></div>
+<div class="text-box"><span>1</span><h3>Избери форма</h3><p>Ваза, кашпа, подложка, контейнер за скъпоценности...</p></div>
+</div>
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step1.jpg">
+<div class="photo-box"><img src="images/step2.jpg"></div>
+<div class="text-box"><span>2</span><h3>Подготви формата</h3><p>Почисти и сложи на равна повърхност.</p></div>
 </div>
-
-<div class="text-box">
-<span>1</span>
-<h3>Избери форма</h3>
-<p>
-Ваза, кашпа, подложка, контейнер за скъпоценности...
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step2.jpg">
+<div class="photo-box"><img src="images/step3.jpg"></div>
+<div class="text-box"><span>3</span><h3>Смесваш Jesmonite</h3><p>Прах + течност в точно съотношение.</p></div>
 </div>
-
-<div class="text-box">
-<span>2</span>
-<h3>Подготви формата</h3>
-<p>
-Почисти и сложи на равана повърхност.
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step3.jpg">
+<div class="photo-box"><img src="images/step4.jpg"></div>
+<div class="text-box"><span>4</span><h3>Добавяш цвят</h3><p>Избираш своята комбинация от пигменти — малко = пастел, повече = наситен.</p></div>
 </div>
-
-<div class="text-box">
-<span>3</span>
-<h3>Смесваш Jesmonite</h3>
-<p>
-Прах + течност в точно съотношение.
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step4.jpg">
+<div class="photo-box"><img src="images/step5.jpg"></div>
+<div class="text-box"><span>5</span><h3>Избираш техника</h3><p>Marbling, layering или solid color.</p></div>
 </div>
-
-<div class="text-box">
-<span>4</span>
-<h3>Добавяш цвят</h3>
-<p>
-Избираш своята комбинация от пигменти.
-Пигменти - малко = пастел, повече = наситен
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step5.jpg">
+<div class="photo-box"><img src="images/step6.jpg"></div>
+<div class="text-box"><span>6</span><h3>Изливаш формата</h3><p>Бавно и равномерно за по-малко мехури.</p></div>
 </div>
-
-<div class="text-box">
-<span>5</span>
-<h3>Избираш техника</h3>
-<p>
-Marbling, layering или solid color.
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step6.jpg">
+<div class="photo-box"><img src="images/step7.jpg"></div>
+<div class="text-box"><span>7</span><h3>Изчакваш</h3><p>20–30 минути за да стегне. Не докосваш.</p></div>
 </div>
-
-<div class="text-box">
-<span>6</span>
-<h3>Изливаш формата</h3>
-<p>
-Изливаш бавно и равномерно за по-малко мехури.
-</p>
-</div>
-
-</div>
-
-
 
 <div class="process-card">
-
-<div class="photo-box">
-<img src="images/step7.jpg">
-</div>
-
-<div class="text-box">
-<span>7</span>
-<h3>Изчакваш</h3>
-<p>
-20–30 минути за да стегне. Не докосваш.
-</p>
+<div class="photo-box"><img src="images/step8.jpg"></div>
+<div class="text-box"><span>8</span><h3>Финиш</h3><p>Изваждаш и полираш с финна шкурка — повърхността става гладка.</p></div>
 </div>
 
 </div>
-
-
-
-<div class="process-card">
-
-<div class="photo-box">
-<img src="images/step8.jpg">
-</div>
-
-<div class="text-box">
-<span>8</span>
-<h3>Финиш</h3>
-<p>
-Изваждаш и с полираш с финна шкутка - прави повърхността гладка.
-</p>
-</div>
-
-</div>
-
-
-</div>
-
 </section>
 
 
-
-
-
 <section class="container">
-
-
-<h2>
-7 НЕЩА, КОИТО ДА ЗНАЕШ ПРЕДИ ДА ДОЙДЕШ
-</h2>
-
-
+<h2>7 НЕЩА, КОИТО ДА ЗНАЕШ ПРЕДИ ДА ДОЙДЕШ</h2>
 <div class="card">
-
 <ul>
-
-<li> ✦ Не ти трябва опит - подходящо е за начинаещи</li>
-
-<li> ✦ Всички материали са включени</li>
-
-<li> ✦ Сам избираш цветове и техники</li>
-
-<li> ✦ Взимаш готовото творение същия ден</li>
-
-<li> ✦ Резултатът изглежда професионално</li>
-
-<li> ✦ Идеален подарък с история</li>
-
-<li> ✦ Всеки декор е неповторим</li>
-
+<li>✦ Не ти трябва опит — подходящо е за начинаещи</li>
+<li>✦ Всички материали са включени</li>
+<li>✦ Сам избираш цветове и техники</li>
+<li>✦ Взимаш готовото творение същия ден</li>
+<li>✦ Резултатът изглежда професионално</li>
+<li>✦ Идеален подарък с история</li>
+<li>✦ Всеки декор е неповторим</li>
 </ul>
-
 </div>
-
-
 </section>
 
 
-
-
-
 <section class="container">
-
-
-<h2>
-ГРАФИК И ЗАПИСВАНЕ
-</h2>
-
-
+<h2>ГРАФИК И ЗАПИСВАНЕ</h2>
 <div class="grid">
 
-
 <div class="card">
-
 <h3>20 юни | 11:00</h3>
-
 <p>Варна, ул. Бреза 2</p>
-
-<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">
-Плати участие
-</a>
-
+<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">Плати участие</a>
 </div>
-
-
 
 <div class="card">
-
 <h3>28 юни | 11:00</h3>
-
 <p>Варна, ул. Бреза 2</p>
-
-<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">
-Плати участие
-</a>
-
+<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">Плати участие</a>
 </div>
 
-
 </div>
-
-
 </section>
-
-
-
 
 
 <section class="container products-section">
-
-<h2>
-ГОТОВИ ТВОРЕНИЯ
-</h2>
-
-
+<h2>ГОТОВИ ТВОРЕНИЯ</h2>
 <div class="grid">
-
-<div class="card">
-<img class="product" src="images/product1.JPG">
+<div class="card"><img class="product" src="images/product1.JPG"></div>
+<div class="card"><img class="product" src="images/product2.jpg"></div>
+<div class="card"><img class="product" src="images/product3.jpg"></div>
+<div class="card"><img class="product" src="images/product4.JPG"></div>
+<div class="card"><img class="product" src="images/product5.jpg"></div>
+<div class="card"><img class="product" src="images/product6.JPG"></div>
 </div>
-
-<div class="card">
-<img class="product" src="images/product2.jpg">
-</div>
-
-<div class="card">
-<img class="product" src="images/product3.jpg">
-</div>
-
-<div class="card">
-<img class="product" src="images/product4.JPG">
-</div>
-
-<div class="card">
-<img class="product" src="images/product5.jpg">
-</div>
-
-<div class="card">
-<img class="product" src="images/product6.JPG">
-</div>
-
-</div>
-
 </section>
 
 
-
-
-
 <section class="container">
-
-<h2>
-ВАШИТЕ ВПЕЧАТЛЕНИЯ СА НАШЕТО ВДЪХНОВЕНИЕ
-</h2>
-
-
+<h2>ВАШИТЕ ВПЕЧАТЛЕНИЯ СА НАШЕТО ВДЪХНОВЕНИЕ</h2>
 <div class="grid">
 
-
-<div class="card">
-★★★★★
-<p>
-Страхотно преживяване. Много уютна атмосфера и прекрасен резултат.
-</p>
-<b>Александра</b>
-</div>
-
-
-<div class="card">
-★★★★★
-<p>
-Не очаквах, че ще направя нещо толкова красиво сама.
-</p>
-<b>Патрисия</b>
-</div>
-
-
-<div class="card">
-★★★★★
-<p>
-Идеален начин да прекараш няколко часа творейки.
-</p>
-<b>Надя</b>
-</div>
-
-
-<div class="card">
-★★★★★
-<p>
-Материалът е невероятен и всичко е обяснено много добре.
-</p>
-<b>Мария</b>
-</div>
-
-
-<div class="card">
-★★★★★
-<p>
-Ще се върна отново за още една форма.
-</p>
-<b>Елена</b>
-</div>
-
-
-<div class="card">
-★★★★★
-<p>
-Получаваш не просто предмет, а спомен.
-</p>
-<b>Виктория</b>
-</div>
-
+<div class="card">★★★★★<p>Страхотно преживяване. Много уютна атмосфера и прекрасен резултат.</p><b>Александра</b></div>
+<div class="card">★★★★★<p>Не очаквах, че ще направя нещо толкова красиво сама.</p><b>Патрисия</b></div>
+<div class="card">★★★★★<p>Идеален начин да прекараш няколко часа творейки.</p><b>Надя</b></div>
+<div class="card">★★★★★<p>Материалът е невероятен и всичко е обяснено много добре.</p><b>Мария</b></div>
+<div class="card">★★★★★<p>Ще се върна отново за още една форма.</p><b>Елена</b></div>
+<div class="card">★★★★★<p>Получаваш не просто предмет, а спомен.</p><b>Виктория</b></div>
 
 </div>
-
 </section>
 
 
-
-
-
 <section class="container">
-
-
-<h2>
-ЧЕСТИ ВЪПРОСИ
-</h2>
-
-
+<h2>ЧЕСТИ ВЪПРОСИ</h2>
 <div class="card">
 
 <p><b>Jesmonite безопасен ли е?</b><br>
-Да - на водна основа е, не отделя токсични изпарения. Подходящ за деца над 7 г. с родител.</p>
-
+Да — на водна основа е, не отделя токсични изпарения. Подходящ за деца над 7 г. с родител.</p>
 
 <p><b>Издръжлив ли е?</b><br>
-Много - по-здрав от гипс, устойчив на влага. Саксиите и подносите се използват ежедневно, както в интериора, така и в екстериора.</p>
-
+Много — по-здрав от гипс, устойчив на влага. Саксиите и подносите се използват ежедневно, както в интериора, така и в екстериора.</p>
 
 <p><b>Мога ли да избера какво да направя?</b><br>
-На повечето workshop-и има следните опции за форма - питай предварително и запази предпочината от теб.</p>
-
+На повечето workshop-и има няколко опции за форма — питай предварително и запази предпочитаната от теб.</p>
 
 <p><b>Колко човека участват в workshop-а?</b><br>
-Групите са ни малки (максимум 6 човека), за да може всеки да се чувства ущтно и комфортно.
-.</p>
-
+Групите са малки (максимум 6 човека), за да може всеки да се чувства уютно и комфортно.</p>
 
 </div>
-
-
 </section>
-
-
-
 
 
 <section class="container">
-
-
 <div class="cta">
-
-
-<h2>
-ПИШЕТЕ НИ ЗА ЗАПИСВАНЕ
-</h2>
-
-
-<p>
-Разгледай готови примери, пипни материалите
-и запази своето място.
-</p>
-
-
-<p>
-Варна, ул. Бреза 2 | 0885 442 821 | eleganssastudio@gmail.com
-</p>
-
-
+<h2>ПИШЕТЕ НИ ЗА ЗАПИСВАНЕ</h2>
+<p>Разгледай готови примери, пипни материалите и запази своето място.</p>
+<p>Варна, ул. Бреза 2 | 0885 442 821 | eleganssastudio@gmail.com</p>
 </div>
-
-
 </section>
 
 
-
-
-
 <footer>
-
-ЕКОЛОГИЧЕН МАТЕРИАЛ |
-РЪЧНА ИЗРАБОТКА |
-ТВОРЧЕСТВО И УДОВОЛСТВИЕ
-
+ЕКОЛОГИЧЕН МАТЕРИАЛ | РЪЧНА ИЗРАБОТКА | ТВОРЧЕСТВО И УДОВОЛСТВИЕ
 </footer>
 
-
-
 </body>
-
 </html>
