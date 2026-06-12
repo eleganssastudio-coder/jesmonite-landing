@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eleganssa Studio | Jesmonite Workshop</title>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital@1&family=Lato:wght@400;700&display=swap');
+
+
+:root{
+--bg:#efebe6;
+--dark:#243444;
+--accent:#3A5068;
+--silver:#7A98AA;
+--card:#F5F9FC;
+}
+
+
+*{
+box-sizing:border-box;
+}
+
+
+body{
+margin:0;
+background:var(--bg);
+color:var(--dark);
+font-family:Lato, sans-serif;
+}
+
+
+.process{
+display:flex;
+flex-direction:column;
+gap:35px;
+}
+
+
+.process-card{
+background:#F5F9FC;
+border-radius:25px;
+padding:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+
+.photo-box{
+width:100%;
+height:350px;
+overflow:hidden;
+border-radius:20px;
+}
+
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+
+.text-box span{
+font-family:"Playfair Display";
+font-size:50px;
+color:#7A98AA;
+}
+
+
+
+@media(max-width:700px){
+
+.process-card{
+grid-template-columns:1fr;
+}
+
+.photo-box{
+height:250px;
+}
+
+}
+
+
+
+.process{
+display:flex;
+flex-direction:column;
+gap:35px;
+}
+
+
+.process-card{
+background:#F5F9FC;
+border-radius:25px;
+padding:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+
+.photo-box{
+width:100%;
+height:350px;
+overflow:hidden;
+border-radius:20px;
+}
+
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+
+.text-box span{
+font-family:"Playfair Display";
+font-size:50px;
+color:#7A98AA;
+}
+
+
+
+@media(max-width:700px){
+
+.process-card{
+grid-template-columns:1fr;
+}
+
+.photo-box{
+height:250px;
+}
+
+}
+
+
+
+.hero{
+width:100%;
+height:100vh;
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 25px;
+}
+
+
+
+h1,h2{
+font-family:"Playfair Display",serif;
+}
+
+
+h1{
+font-size:55px;
+line-height:1.1;
+margin-bottom:10px;
+}
+
+
+h2{
+font-size:36px;
+margin-top:70px;
+}
+
+
+
+.italic{
+font-family:Lora,serif;
+font-style:italic;
+font-size:24px;
+}
+
+
+.intro{
+text-align:center;
+}
+
+
+.card{
+background:var(--card);
+border-radius:22px;
+padding:35px;
+margin-top:30px;
+box-shadow:0 10px 30px #0001;
+}
+
+
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+align-items:start;
+}
+
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+
+
+.step span{
+font-size:35px;
+font-family:"Playfair Display";
+color:var(--silver);
+}
+
+
+
+ul{
+padding:0;
+list-style:none;
+}
+
+
+
+li{
+margin:18px 0;
+font-size:18px;
+}
+
+
+
+.btn{
+display:inline-block;
+background:var(--accent);
+color:white;
+padding:15px 35px;
+border-radius:40px;
+text-decoration:none;
+margin-top:20px;
+}
+
+
+
+.cta{
+background:var(--accent);
+color:white;
+padding:50px;
+border-radius:25px;
+text-align:center;
+}
+
+
+
+footer{
+background:var(--dark);
+color:white;
+padding:30px;
+text-align:center;
+font-size:14px;
+}
+
+
+
+/* Готови продукти */
+
+.product{
+width:100%;
+height:300px;
+object-fit:cover;
+display:block;
+border-radius:18px;
+}
+
+
+.products-section .grid{
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+
+.products-section .card{
+padding:20px;
+margin-top:0;
+overflow:hidden;
+}
+
+
+@media(max-width:900px){
+
+.products-section .grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.products-section .grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="hero"></div>
+
+
+
+<section class="container intro">
+
+
+<div class="italic">
+Eleganssa Studio
+</div>
+
+
+<div class="italic">
+Твори. Миксирай. Създай.
+</div>
+
+
+
+<h1>
+РАБОТИЛНИЦА ПО<br>
+Jesmonite декор
+</h1>
+
+
+<div class="italic">
+Вашите впечатления са нашето вдъхновение!
+</div>
+
+
+
+<div class="card">
+
+
+<p>
+Jesmonite е лек, издръжлив материал на водна основа.
+Сам избираш цвета, техниката и формата —
+и си тръгваш с парче, което изглежда като купено
+от дизайнерски магазин.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+<h2>
+ПРОЦЕСЪТ — СТЪПКА ПО СТЪПКА
+</h2>
+
+
+<div class="process">
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step1.jpg">
+</div>
+
+<div class="text-box">
+<span>1</span>
+<h3>Избери форма</h3>
+<p>
+Избери форма Ваза, кашпа, подложка, контейнер за скъпоценности...
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step2.jpg">
+</div>
+
+<div class="text-box">
+<span>2</span>
+<h3>Подготви формата</h3>
+<p>
+Почисти и сложи на равана повърхност.
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step3.jpg">
+</div>
+
+<div class="text-box">
+<span>3</span>
+<h3>Смесваш Jesmonite</h3>
+<p>
+Прах + течност в точно съотношение.
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step4.jpg">
+</div>
+
+<div class="text-box">
+<span>4</span>
+<h3>Добавяш цвят</h3>
+<p>
+Избираш своята комбинация от пигменти.
+Пигменти - малко = пастел, повече = наситен
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step5.jpg">
+</div>
+
+<div class="text-box">
+<span>5</span>
+<h3>Избираш техника</h3>
+<p>
+Marbling, layering или solid color.
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step6.jpg">
+</div>
+
+<div class="text-box">
+<span>6</span>
+<h3>Изливаш формата</h3>
+<p>
+Изливаш бавно и равномерно за по-малко мехури.
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step7.jpg">
+</div>
+
+<div class="text-box">
+<span>7</span>
+<h3>Изчакваш</h3>
+<p>
+20–30 минути за да стегне. Не докосваш.
+</p>
+</div>
+
+</div>
+
+
+
+<div class="process-card">
+
+<div class="photo-box">
+<img src="images/step8.jpg">
+</div>
+
+<div class="text-box">
+<span>8</span>
+<h3>Финиш</h3>
+<p>
+Изваждаш и с полираш с финна шкутка - прави повърхността гладка.
+</p>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<h2>
+7 НЕЩА, КОИТО ДА ЗНАЕШ ПРЕДИ ДА ДОЙДЕШ
+</h2>
+
+
+<div class="card">
+
+<ul>
+
+<li> ✦ Не ти трябва опит - подходящо е за начинаещи</li>
+
+<li> ✦ Всички материали са включени</li>
+
+<li> ✦ Сам избираш цветове и техники</li>
+
+<li> ✦ Взимаш готовото творение същия ден</li>
+
+<li> ✦ Резултатът изглежда професионално</li>
+
+<li> ✦ Идеален подарък с история</li>
+
+<li> ✦ Всеки декор е неповторим</li>
+
+</ul>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<h2>
+ГРАФИК И ЗАПИСВАНЕ
+</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>20 юни | 11:00</h3>
+
+<p>Варна, ул. Бреза 2</p>
+
+<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">
+Плати участие
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>28 юни | 11:00</h3>
+
+<p>Варна, ул. Бреза 2</p>
+
+<a class="btn" href="https://mypos.com/vmp/btn/BFDUL7Z2UP598">
+Плати участие
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container products-section">
+
+<h2>
+ГОТОВИ ТВОРЕНИЯ
+</h2>
+
+
+<div class="grid">
+
+<div class="card">
+<img class="product" src="images/product1.jpg">
+</div>
+
+<div class="card">
+<img class="product" src="images/product2.jpg">
+</div>
+
+<div class="card">
+<img class="product" src="images/product3.jpg">
+</div>
+
+<div class="card">
+<img class="product" src="images/product4.jpg">
+</div>
+
+<div class="card">
+<img class="product" src="images/product5.jpg">
+</div>
+
+<div class="card">
+<img class="product" src="images/product6.jpg">
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="container">
+
+<h2>
+ВАШИТЕ ВПЕЧАТЛЕНИЯ СА НАШЕТО ВДЪХНОВЕНИЕ
+</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+★★★★★
+<p>
+Страхотно преживяване. Много уютна атмосфера и прекрасен резултат.
+</p>
+<b>Александра</b>
+</div>
+
+
+<div class="card">
+★★★★★
+<p>
+Не очаквах, че ще направя нещо толкова красиво сама.
+</p>
+<b>Патрисия</b>
+</div>
+
+
+<div class="card">
+★★★★★
+<p>
+Идеален начин да прекараш няколко часа творейки.
+</p>
+<b>Надя</b>
+</div>
+
+
+<div class="card">
+★★★★★
+<p>
+Материалът е невероятен и всичко е обяснено много добре.
+</p>
+<b>Мария</b>
+</div>
+
+
+<div class="card">
+★★★★★
+<p>
+Ще се върна отново за още една форма.
+</p>
+<b>Елена</b>
+</div>
+
+
+<div class="card">
+★★★★★
+<p>
+Получаваш не просто предмет, а спомен.
+</p>
+<b>Виктория</b>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<h2>
+ЧЕСТИ ВЪПРОСИ
+</h2>
+
+
+<div class="card">
+
+<p><b>Jesmonite безопасен ли е?</b><br>
+Да - на водна основа е, не отделя токсични изпарения. Подходящ за деца над 7 г. с родител.</p>
+
+
+<p><b>Издръжлив ли е?</b><br>
+Много - по-здрав от гипс, устойчив на влага. Саксиите и подносите се използват ежедневно, както в интериора, така и в екстериора.</p>
+
+
+<p><b>Мога ли да избера какво да направя?</b><br>
+На повечето workshop-и има следните опции за форма - питай предварително и запази предпочината от теб.</p>
+
+
+<p><b>Колко човека участват в workshop-а?</b><br>
+Групите са ни малки (максимум 6 човека), за да може всеки да се чувства ущтно и комфортно.
+.</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<div class="cta">
+
+
+<h2>
+ПИШЕТЕ НИ ЗА ЗАПИСВАНЕ
+</h2>
+
+
+<p>
+Разгледай готови примери, пипни материалите
+и запази своето място.
+</p>
+
+
+<p>
+Варна, ул. Бреза 2 | 0885 442 821 | eleganssastudio@gmail.com
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+ЕКОЛОГИЧЕН МАТЕРИАЛ |
+РЪЧНА ИЗРАБОТКА |
+ТВОРЧЕСТВО И УДОВОЛСТВИЕ
+
+</footer>
+
+
+
+</body>
+
+</html>
